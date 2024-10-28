@@ -31,11 +31,10 @@ namespace WindowsFormsApp1
             CheckForIllegalCrossThreadCalls = false;
             LoadTeamData();
         }
+        
         /* 
          * @brief Loads team data from the MySQL database and populates the RichTextBox.
          */
-
-
         private void LoadTeamData()
         {
             using (var connection = new MySqlConnection(mysqlcon))
